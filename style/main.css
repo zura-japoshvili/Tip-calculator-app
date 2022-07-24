@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+/* For hide input arrows */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/**/
+
+.flex{
+    display: flex;
+}
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+.v-center{
+    display: flex;
+    align-items: center;
+}
+body{
+    background-color: #C5E4E7;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+body > img{
+    margin-top: 163px;
+    margin-bottom: 88px;
+}
+main{
+    width: 920px;
+    height: 481px;
+    background: #FFFFFF;
+    box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+    border-radius: 25px;
+    margin-bottom: 230px;
+    padding-left: 48px;
+    display: flex;
+}
+.control{
+    width: 380px;
+    margin-right: 48px;
+}
+.control > p{
+    font-size: 16px;
+    color: #5E7A7D;
+}
+.control .input-wrapper{
+    position: relative;
+}
+.control .input-wrapper > input{
+    width: 100%;
+    height: 48px;
+    background: #F3F9FA;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding: 6px 20px;
+    font-size: 24px;
+    color: #00474B;
+}
+.control div img{
+    position: absolute;
+    left: 18px;
+    top: 16px;
+}
+.control div .dollar-icon{
+    width: 9px;
+    height: 15px;
+}
+.control div .person-icon{
+    width: 13px;
+    height: 16px;
+}
+.bill-p{
+    margin-top: 45px;
+    margin-bottom: 6px;
+}
+.control .sel-tip{
+    margin: 40px 0 16px;
+}
+.btn-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.btn-wrapper button{
+    background-color: #00474B;
+    border-radius: 5px;
+    width: 117px;
+    height: 48px;
+    border: none;
+    outline: none;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+    font-size: 24px;
+    cursor: pointer;
+}
+.btn-wrapper button:hover{
+    color: #00474B;
+    background-color: #9FE8DF;
+}
+.btn-wrapper .active{
+    background-color: #26C2AE;
+    color: #00474B;
+}
+.btn-wrapper input{
+    font-size: 24px;
+    color: #547878;
+    background-color: #F3F9FA;
+    text-align: center;
+    border-radius: 5px;
+    width: 117px;
+    height: 48px;
+    border: none;
+    outline: none;
+    margin-bottom: 16px;
+}
+.btn-wrapper input:focus{
+    text-align: right;
+}
+.num-pp{
+    margin: 24px 0 6px;
+}
+
+.screen{
+    width: 413px;
+    height: 417px;
+    background-color: #00474B;
+    border-radius: 15px;
+    margin-top: 32px;
+    flex-direction: column;
+    padding: 0 40px 40px 40px;
+    position: relative;
+}
+.screen > div{
+    margin-top: 25px;
+}
+.screen h5{
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.screen p{
+    font-size: 13px;
+    color: #7F9D9F;
+}
+.screen h3{
+    font-size: 48px;
+    letter-spacing: -1px;
+    color: #26C2AE;
+}
+.screen .reset{
+    color: #00474B;
+    background-color: #26C2AE;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 333px;
+    height: 48px;
+    border: none;
+    position: absolute;
+    bottom: 40px;
+}

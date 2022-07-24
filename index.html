@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Tip calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+  <img src="./images/logo.svg" alt="logo">
+  <main>
+    <div class="control">
+      <p class="bill-p">Bill</p>
+      <div class="input-wrapper">
+        <img class="dollar-icon" src="./images/icon-dollar.svg" alt="icon-dollar">
+        <input type="number" class="in-bill" value="0">
+      </div>
+      <p class="sel-tip">Select Tip %</p>
+      <div class="btn-wrapper">
+        <button>5%</button>
+        <button>10%</button>
+        <button>15%</button>
+        <button>25%</button>
+        <button>50%</button>
+        <input type="number" placeholder="CUSTOM">
+      </div>
+      <p class="num-pp">Number of People</p>
+      <div class="input-wrapper">
+        <img class="person-icon" src="./images/icon-person.svg" alt="icon-person">
+        <input type="number" class="people-num" value="0">
+      </div>
+    </div>
+    <div class="screen flex">
+      <div class="space-between v-center">
+        <div>
+          <h5>Tip Amount</h5>
+          <p>/ person</p>
+        </div>
+        <h3 class="tip-amount">$0.00</h3>
+      </div>
+      <div class="space-between v-center">
+        <div>
+          <h5>Total</h5>
+          <p>/ person</p>
+        </div>
+        <h3 class="total">$0.00</h3>
+      </div>
+      <button class="reset">RESET</button>
+    </div>
+  </main>
+</body>
+</html>
