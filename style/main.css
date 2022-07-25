@@ -43,11 +43,12 @@ main{
     width: 920px;
     height: 481px;
     background: #FFFFFF;
-    box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+    box-shadow: 0px 32px 43px #4fa6af33;
     border-radius: 25px;
     margin-bottom: 230px;
     padding-left: 48px;
     display: flex;
+    flex-wrap: wrap;
 }
 .control{
     width: 380px;
@@ -173,4 +174,21 @@ main{
     border: none;
     position: absolute;
     bottom: 40px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 920px) {
+    main{
+        width: 375px;
+        height: 789px;
+        padding-left: 0;
+        justify-content: center;
+    }
+    .control{
+        margin-right: 0;
+        width: 311px;
+    }
+    .screen .reset{
+        width: 281px;
+    }
 }
