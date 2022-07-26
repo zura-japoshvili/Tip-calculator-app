@@ -3,7 +3,8 @@ let inBill = document.querySelector(".in-bill"),
     customTip = document.querySelector(".custom-tip"),
     tipAmount = document.querySelector('.tip-amount'),
     totalAmount = document.querySelector(".total"),
-    resetBtn = document.querySelector(".reset");
+    resetBtn = document.querySelector(".reset"),
+    warning = document.querySelector('.warning');
 
 let tipBtns = document.querySelectorAll(".btn-wrapper button");
 
@@ -11,8 +12,28 @@ let btnValue = 0,
     resetActive = false;
 
 inBill.onkeyup = function() {calculate()};
-peopleNum.onkeyup = function() {calculate()};
+peopleNum.onkeyup = function() {
+    if(peopleNum.value == 0){
+        warning.style.visibility = 'visible';
+    }else{
+        warning.style.visibility = 'hidden';
+        calculate();
+    }
+};
 customTip.onkeyup = function() {calculate()};
+
+resetBtn.addEventListener('click', function(){
+    if(resetActive){
+        resetActive = false;
+        resetBtn.classList.add("reset-inactive");
+
+        inBill.value = 0;
+        peopleNum.value = 0;
+        customTip.value = 0;
+        tipAmount.textContent = 0;
+        totalAmount.textContent = 0;
+    }
+});
 
 tipBtns.forEach(value => value.addEventListener('click', function(value){
     let currentBtn = value.currentTarget;
@@ -25,6 +46,9 @@ tipBtns.forEach(value => value.addEventListener('click', function(value){
     calculate();
 }))
 function calculate(){
+    resetBtn.classList.remove("reset-inactive");
+
+    resetActive = true;
     let tip = 0,
         total = 0;
     const people = parseInt(peopleNum.value),

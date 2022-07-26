@@ -134,10 +134,14 @@ main{
 .btn-wrapper input:focus{
     text-align: right;
 }
-.num-pp{
+.pp-div{
     margin: 24px 0 6px;
 }
-
+.warning{
+    font-size: 16px;
+    color: #E17457;
+    visibility: hidden;
+}
 .screen{
     width: 413px;
     height: 417px;
@@ -164,6 +168,10 @@ main{
     letter-spacing: -1px;
     color: #26C2AE;
 }
+.reset-inactive{
+    background-color: #0D686D !important;
+    color: #00474B !important;
+}
 .screen .reset{
     color: #00474B;
     background-color: #26C2AE;
@@ -176,6 +184,10 @@ main{
     bottom: 40px;
     cursor: pointer;
 }
+.screen .reset:hover{
+    background-color: #9FE8DF;
+}
+
 
 @media screen and (max-width: 920px) {
     main{
